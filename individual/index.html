@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>Sim Racing Metadise</title>
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="image/log.jpg" alt="MSR Logo">
+    </div>    
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#about-us">About</a>
+        <a href="#mission-vision">Mission & Vision</a>
+        <a href="#gallery-grid">Packages</a>
+        <a href="#upcoming-listing">Upcoming</a>
+        <a href="#where-to-find-us">Location</a>
+        <a href="#contact-us">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero-section hidden-section fade-in">
+        <div class="hero-content">
+            <h1>Welcome to <span>Metadise Sim Racing</span></h1>
+            <p>Immerse yourself in the ultimate racing simulation. Experience the thrill of high-speed competition on meticulously recreated tracks from around the world. Whether you're a seasoned driver or new to racing, our state-of-the-art simulators deliver unparalleled realism and excitement.</p>
+            <a class="btn" href="https://metadise.io/bookapp/" target="_blank">Book Your Race Now</a>
+        </div>
+    </section>
+
+<!-- About Us Section -->
+<section id="about-us" class="info-section hidden-section fade-in">
+    <div class="content-container about-layout">
+        <div class="about-left">
+            <span class="about-badge">About Us</span>
+            <h2>Discover the World of Metadise Sim Racing</h2>
+            <p>Metadise Sim Racing is a global platform dedicated to bringing you the most authentic and thrilling virtual racing experiences. Founded by a team of professional racers and tech enthusiasts, we strive to push the boundaries of simulation, offering dynamic competitions, advanced hardware setups, and a supportive community.</p>
+            <a href="#" class="learn-more-btn">Learn More &rarr;</a>
+        </div>
+        <div class="about-right">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏙️</div>
+                    <h4>Professional Setup</h4>
+                    <p>State-of-the-art simulators and rigs designed to replicate real-world racing conditions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h4>Competitive Tournaments</h4>
+                    <p>Regular leagues, time trials, and special events to challenge racers of all skill levels.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h4>Community Driven</h4>
+                    <p>A vibrant, inclusive community of like-minded enthusiasts supporting each other’s journey.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h4>Continuous Growth</h4>
+                    <p>Regular updates and improvements based on community feedback to enhance your experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="mission-vision" class="info-section">
+        <div class="content-container">
+    
+            <!-- Mission Block -->
+            <div class="mission-block hidden-section slide-in-from-right">
+                <div class="text-content">
+                    <h3>Mission</h3>
+                    <h2>To Elevate Virtual Racing to a Professional and Immersive Experience</h2>
+                    <p>Our mission is to bridge the gap between simulation and reality by delivering cutting-edge technology, authentic physics, and a competitive environment that empowers racers to test their limits and grow as drivers.</p>
+                </div>
+                <div class="media-container">
+                    <img src="image/mission.jpg" alt="Mission Image">
+                </div>
+            </div>
+    
+            <!-- Vision Block -->
+            <div class="vision-block hidden-section slide-in-from-left">
+                <div class="text-content">
+                    <h3>Vision</h3>
+                    <h2>To Become the Global Leader in Virtual Racing Experiences</h2>
+                    <p>We envision a future where virtual and real-world motorsports seamlessly integrate, enabling fans and competitors to engage, train, and compete on a global scale. By leveraging technology and community collaboration, we aim to set new standards in eRacing.</p>
+                </div>
+                <div class="media-container">
+                    <img src="image/vision.jpg" alt="Vision Image">
+                </div>
+
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <!-- Carousel Section (Featured Experiences) -->
+    <section class="carousel-section hidden-section fade-in">
+        <div class="content-container">
+            <h2>Featured Experiences</h2>
+            <p>Check out some of our most popular racing challenges and iconic tracks. Each experience is handcrafted to deliver an adrenaline-fueled adventure.</p>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="image/monza.jpg" alt="Monza Track Experience" />
+                    <img src="image/nurbur.jpg" alt="Nürburgring Night Race" />
+                    <img src="image/lemans.jpg" alt="Le Mans Classic Endurance" />
+                </div>
+                <button class="slide-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="slide-btn next" onclick="changeSlide(1)">&#10095;</button>                
+                <div class="carousel-indicators">
+                    <span class="indicator" onclick="setSlide(0)"></span>
+                    <span class="indicator" onclick="setSlide(1)"></span>
+                    <span class="indicator" onclick="setSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section id="gallery-grid" class="gallery-grid-section hidden-section fade-in">
+        <div class="content-container">
+            <h2>Our Racing Packages</h2>
+            <p>Choose from a variety of sessions tailored to your skill level and interests. Each package includes a full rig, support staff, and a personalized experience.</p>
+            <div class="grid-container">
+                <figure class="grid-item">
+                    <img src="image/beginner.jpg" alt="Beginner Racing Package" />
+                    <figcaption>Beginner's Warm-Up</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img src="image/track-day.jpg" alt="Advanced Racing Package" />
+                    <figcaption>Advanced Track Day</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img src="image/endurance.jpg" alt="Endurance Racing Package" />
+                    <figcaption>Endurance Challenge</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img src="image/f1.jpg" alt="F1 Experience Package" />
+                    <figcaption>F1 Experience</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img src="image/luxury.jpg" alt="Luxury Suite Package" />
+                    <figcaption>Luxury Suite VIP</figcaption>
+                </figure>
+                <figure class="grid-item">
+                    <img src="image/team2.jpg" alt="Team Racing Package" />
+                    <figcaption>Team Tournament</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider Line Before New Sections -->
+    <div class="section-divider"></div>
+
+    <!-- Upcoming Listing Section -->
+    <section id="upcoming-listing" class="info-section hidden-section fade-in">
+        <div class="content-container">
+            <h2>Upcoming Listing</h2>
+            <h3>Don't Miss Our Next Events and Releases</h3>
+            <p>Stay tuned for our latest tournaments, new car and track additions, and special community challenges.</p>
+    
+            <div class="upcoming-grid">
+                <div class="upcoming-item">
+                    <span class="icon">🏁</span>
+                    <h4>Summer Championship</h4>
+                    <p>June 15th - August 20th: A high-stakes series featuring GT3 and Formula cars for all skill levels.</p>
+                </div>
+    
+                <div class="upcoming-item">
+                    <span class="icon">🗺️</span>
+                    <h4>New Track Release</h4>
+                    <p>July 5th: Unveil of our new laser-scanned circuit inspired by a historic European raceway.</p>
+                </div>
+    
+                <div class="upcoming-item">
+                    <span class="icon">🏆</span>
+                    <h4>Endurance Weekend</h4>
+                    <p>August 1st - 2nd: A 24-hour endurance event testing teamwork, strategy, and consistency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Team Section -->
+<section id="meet-our-team" class="info-section hidden-section fade-in">
+    <div class="content-container">
+        <h2>Team</h2>
+        <h3>Check Our Team</h3>
+        <p>Meet the passionate professionals behind our racing simulations. Our team is dedicated to pushing the boundaries of simulation technology and delivering an unmatched racing experience.</p>
+
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="image/CEO.jpg" alt="Walter White">
+                <div class="team-info">
+                    <h4>James Gan</h4>
+                    <span>Chief Executive Officer</span>
+                    <div class="social-icons">
+                        <a href="#"><span class="icon">X</span></a>
+                        <a href="#"><span class="icon"></span></a>
+                        <a href="#"><span class="icon"></span></a>
+                        <a href="#"><span class="icon"></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="image/advisor.jpg" alt="Sarah Jhonson">
+                <div class="team-info">
+                    <h4>Afiq Fadhli Narawi</h4>
+                    <span>Advisor</span>
+                    <div class="social-icons">
+                        <a href="#"><span class="icon">X</span></a>
+                        <a href="#"><span class="icon"></span></a>
+                        <a href="#"><span class="icon"></span></a>
+                        <a href="#"><span class="icon"></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="image/COO.jpg" alt="William Anderson">
+                <div class="team-info">
+                    <h4>Ang Wee Chin</h4>
+                    <span>COO</span>
+                    <div class="social-icons">
+                        <a href="#"><span class="icon">X</span></a>
+                        <a href="#"><span class="icon"></span></a>
+                        <a href="#"><span class="icon"></span></a>
+                        <a href="#"><span class="icon"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+<!-- Where to Find Us Section -->
+<section id="where-to-find-us" class="info-section hidden-section slide-up">
+    <div class="content-container">
+        <h2>Where to Find Us</h2>
+        <h3>Join Us Online and Offline</h3>
+        <p>Connect with us at our flagship sim centers, partner venues, and online community platforms.</p>
+
+        <div class="where-grid">
+            <!-- Left Column: Image and Address -->
+            <div class="where-left">
+                <div class="media-container">
+                    <img src="image/location.jpg" alt="Where to find us">
+                </div>
+                <p>Our primary facility is located in the heart of Kuching City, featuring professional-grade simulators and hosting weekly workshops. We also have partner locations throughout Sarawak, ensuring you can race with us no matter where you call home.</p>
+            </div>
+
+            <!-- Right Column: Online Platforms -->
+            <div class="where-right">
+                <h4>Online Platforms</h4>
+                <ul>
+                    <li><strong>Official Website and Forums</strong></li>
+                    <li><strong>Dedicated Discord Server</strong> for live chat and race meetups</li>
+                    <li><strong>YouTube Channel</strong> featuring tutorials, highlights, and interviews</li>
+                    <li><strong>Twitch Streams</strong> of live events and community challenges</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Features Row -->
+        <div class="features-row">
+            <div class="feature-item">
+                <span class="icon">👀</span>
+                <h5>Realistic Physics</h5>
+            </div>
+            <div class="feature-item">
+                <span class="icon">∞</span>
+                <h5>Limitless Tracks</h5>
+            </div>
+            <div class="feature-item">
+                <span class="icon">🎓</span>
+                <h5>Expert Training</h5>
+            </div>
+            <div class="feature-item">
+                <span class="icon">🔧</span>
+                <h5>Customization</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Photos Section -->
+<section id="photos" class="photos-section hidden-section fade-in">
+    <div class="photos-container">
+        <h2>Gallery</h2>
+        <h3>Check Our Gallery</h3>
+        <div class="photos-grid">
+            <!-- Replace these images with your own -->
+            <img src="image/photo1.jpg" alt="Photo 1">
+            <img src="image/photo2.jpg" alt="Photo 2">
+            <img src="image/photo3.jpg" alt="Photo 3">
+            <img src="image/photo4.jpg" alt="Photo 4">
+            <img src="image/photo5.jpg" alt="Photo 5">
+            <img src="image/photo6.jpg" alt="Photo 6">
+            <img src="image/photo7.jpg" alt="Photo 7">
+            <img src="image/photo8.jpg" alt="Photo 8">
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Contact Us Section -->
+<section id="contact-us" class="info-section hidden-section fade-in">
+    <div class="content-container">
+        <h2>Contact</h2>
+        <h3>Check Our Contact</h3>
+        <p>Have questions, feedback, or inquiries about partnerships? We'd love to hear from you.</p>
+
+        <div class="contact-grid">
+            <!-- Left Column: Contact Details -->
+            <div class="contact-details">
+                <h4>Contact Us</h4>
+                <h5>Get in Touch</h5>
+                <p>Our team is here to help. Reach out and we’ll get back to you as soon as possible.</p>
+
+                <ul class="contact-info">
+                    <li>
+                        <span class="icon">📍</span>
+                        <div>
+                            <strong>Address</strong><br>
+                            Level 2 , 26 Survey Lot 19704, Block B2, Jalan Saradise, 93250 Kuching, Sarawak    
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">📞</span>
+                        <div>
+                            <strong>Call Us</strong><br>
+                            0138026696
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">✉️</span>
+                        <div>
+                            <strong>Email Us</strong><br>
+                            contact@metadisesimracing.com
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="send-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-container">
+        <!-- Left Column: Company Info -->
+        <div class="footer-col company-info">
+            <h3>Metadise Sim Racing</h3>
+            <p>Level 2 , 26 Survey Lot 19704,<br>Block B2, Jalan Saradise, 93250 Kuching, Sarawak</p>
+            <p><strong>Phone:</strong>0138026696<br>
+            <strong>Email:</strong> contact@metadisesimracing.com</p>
+            
+            <div class="social-icons">
+                <!-- Example Icons (Replace with your own SVGs or FontAwesome icons) -->
+                <a href="#"><span class="icon">❌</span></a>
+                <a href="#"><span class="icon"></span></a>
+                <a href="#"><span class="icon"></span></a>
+                <a href="#"><span class="icon"></span></a>
+            </div>
+        </div>
+
+        <!-- Middle Columns: Quick Links & Racing Services -->
+        <div class="footer-col links-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#mission-vision">Mission</a></li>
+                <li><a href="#mission-vision">Vision</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col links-col">
+            <h4>Racing Services</h4>
+            <ul>
+                <li><a href="#upcoming-listing">Upcoming Events</a></li>
+                <li><a href="#where-to-find-us">Locations</a></li>
+                <li><a href="#">Partnership Inquiries</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Column: Newsletter -->
+        <div class="footer-col newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Sign up for updates on new tracks, upcoming tournaments, and special offers.</p>
+            <form action="#" method="post">
+                <div class="newsletter-field">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© Copyright Metadise Sim Racing All Rights Reserved</p>
+        <p>Designed by Metadise Design Team</p>
+    </div>
+</footer>
+
+
+<script>
+let currentSlide = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-images img');
+    const indicators = document.querySelectorAll('.indicator');
+    const totalSlides = slides.length;
+
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    slides.forEach((slide, i) => {
+        slide.style.display = i === currentSlide ? 'block' : 'none';
+    });
+
+    indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active-indicator', i === currentSlide);
+    });
+}
+
+function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+}
+
+function setSlide(index) {
+    showSlide(index);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentSlide);
+
+    // Intersection Observer for scroll-triggered transitions
+    const hiddenSections = document.querySelectorAll('.hidden-section');
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                obs.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    hiddenSections.forEach(section => {
+        observer.observe(section);
+    });
+});
+</script>
+
+</body>
+</html>
